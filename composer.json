@@ -1,0 +1,37 @@
+{
+    "name": "whitehatsllc/lumen-passport-mongodb",
+    "type": "library",
+    "description": "Making Laravel Passport work with Lumen specifically with mongodb",
+    "keywords": ["php", "lumen", "lumen passport", "mongodb"],
+    "homepage": "https://github.com/whitehatsllc/lumen-passport-mongodb",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Whitehats LLC",
+            "email": "info@whitehats.ae",
+            "homepage": "http://whitehats.ae/"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "illuminate/database": "~5.3|~5.4|~5.5|~5.6",
+        "illuminate/support": "~5.3|~5.4|~5.5|~5.6",
+        "whitehatsllc/passport-mongodb": "4.0.*"
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/whitehatsllc/passport-mongodb.git"
+        }
+    ],
+    "require-dev": {
+        "fzaninotto/faker": "~1.4",
+        "phpunit/phpunit": "~5.0",
+        "codeclimate/php-test-reporter": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Whitehatsllc\\LumenPassportMongodb\\": "src/"
+        }
+    }
+}
