@@ -63,7 +63,7 @@ class AccessTokenController extends \Whitehatsllc\PassportMongodb\Http\Controlle
      */
     private function makePasswordGrant() {
         $grant = new \League\OAuth2\Server\Grant\PasswordGrant(
-                app()->make(\Laravel\Passport\Bridge\UserRepository::class), app()->make(\Laravel\Passport\Bridge\RefreshTokenRepository::class)
+                app()->make(\Whitehatsllc\PassportMongodb\Bridge\UserRepository::class), app()->make(\Whitehatsllc\PassportMongodb\Bridge\RefreshTokenRepository::class)
         );
 
         $grant->setRefreshTokenTTL(Passport::refreshTokensExpireIn());
